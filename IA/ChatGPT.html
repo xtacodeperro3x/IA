@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat GPT</title>
+    <link rel="icon" href="Imagenes/Logo/Brain.ico">
+
+    <link rel="stylesheet" href="CSS/Imagenes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/burbujas.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+        <div class="logo">
+          <a href="Inicio.html"> <img src="Imagenes/Logo/AB.png" alt=""> </a>
+        </div>
+        <div class="icon__user">
+          <input type="search" id="input-search" placeholder="Buscar aqui">
+            <div class="btns">
+              <i class="fa-solid fa-magnifying-glass" title="Busqueda"></i>
+            </div>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><a href="Inicio.html">Inicio</a></td></tr>
+                    <tr><td><a href="Que.html">¿Qué es?</a></td></tr>
+                    <tr><td><a href="Que.html">Tipos</a></td></tr>
+                    <tr><td><a href="Que.html">Campos</a></td></tr>
+                    <tr><td><a href="Historia.html">Historia</a></td></tr>
+                    <tr><td><a href="Usos.html"></a>Usos</td></tr>
+                    <tr><td><a href="Usos.html">Beneficios</a></td></tr>
+                    <tr><td><a href="Usos.html">Riesgos</a></td></tr>
+                    <tr><td><a href="Plataformas.html">Plataformas</a></td></tr>
+                    <tr><td><a href="Programadores.html">Programadores</a></td></tr>
+                    <tr><td><a href="Universidades.html">Universidades para estudiar IA </a></td></tr>
+                    <tr><td><a href="RainWorld.html">Caso Rain World</a></td></tr>
+                    <tr><td><a href="ChatGPT.html">Chat GPT</a></td></tr>
+                    <tr><td><a href="Acercade.html">Artificial Brain</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+      <div class="name__page">
+          <img src="Imagenes/Logo/AB-s.png" alt="">
+          <h4>Artificial Brain</h4>
+      </div>
+
+        <div class="options__menu">
+
+          <nav class="nav">
+              <ul class="list">
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Inicio.html" class="nav__link"><i class="fa-solid fa-house-chimney" title="Inicio"></i></a>
+                          <a href="Inicio.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                        <a href="Que.html" class="nav__link"><i class="fa-solid fa-circle-question" title="¿Qué es?"></i></a>
+                          <a href="Que.html" class="nav__link">¿Qué es?</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Tipos</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Campos</a>
+                          </li>
+                      </ul>
+
+                  </li>
+
+
+                  <li class="list__item">
+                      <div class="list__button">
+                        <a href="Historia.html" class="nav__link"><i class="fa-solid fa-book" title="Historia"></i></a>
+                          <a href="Historia.html" class="nav__link">Historia</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                          <a href="Usos.html" class="nav__link"><i class="fa-solid fa-computer" title="Usos"></i></a>
+                          <a href="Usos.html" class="nav__link">Usos</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Beneficios</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Riesgos</a>
+                          </li>
+
+                      </ul>
+
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Plataformas.html" class="nav__link"><i class="fa-solid fa-server" title="Plataformas"></i></a>
+                          <a href="Plataformas.html" class="nav__link">Plataformas</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Programadores.html" class="nav__link"><i class="fa-solid fa-user-tie" title="Programadores"></i></a>
+                          <a href="Programadores.html" class="nav__link">Programadores</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Universidades.html" class="nav__link"><i class="fa-solid fa-graduation-cap" title="Universidades"></i></i></a>
+                          <a href="Universidades.html" class="nav__link">Universidades</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="ChatGPT.html" class="nav__link"><i class="fa-solid fa-chalkboard-user" title="ChatGPT"></i></i></a>
+                          <a href="ChatGPT.html" class="nav__link">ChatGPT</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="RainWorld.html" class="nav__link"><i class="fa-solid fa-gamepad" title="Rain World"></i></a>
+                          <a href="RainWorld.html" class="nav__link">Rain World</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Acercade.html" class="nav__link"><i class="fa-solid fa-users" title="Nosotros"></i></a>
+                          <a href="Acercade.html" class="nav__link">Nosotros</a>
+                      </div>
+                  </li>
+
+              </ul>
+          </nav>
+
+        </div>
+
+    </div>
+
+    <main>
+
+      <div class="container">
+          <div class="bubbles">
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:27;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:32;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:33;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+
+
+
+          </div>
+      </div>
+
+      <div class="text">
+
+        <div class="wrapper">
+          <h1>ChatGPT.</h1><br> <br>
+          <h3>¿Qué es?</h3>
+          <p>Antes de comenzar con esta sección es importante entender qué es un Chat GPT. Un Chat GPT es un programa informático que utiliza la inteligencia artificial para generar respuestas a partir de las preguntas que se le hacen. Está diseñado para imitar una conversación humana y ofrecer respuestas naturales y convincentes. El Chat GPT funciona utilizando un modelo de lenguaje natural basado en redes neuronales. El modelo se entrena con grandes cantidades de datos de texto, por ejemplo, libros, artículos de noticias y conversaciones entre humanos. Luego, cuando el usuario hace una pregunta, el programa examina el contexto de la pregunta y genera una respuesta basada en lo que ha aprendido de los datos de entrenamiento. Esto significa que puede responder preguntas, mantener conversaciones e incluso hacer sugerencias útiles a sus usuarios.</p> <br>
+
+        </div>
+
+        <div class="wrapper">
+          <img src="Imagenes\ChatGPT\ChatGPT0.jpg" alt="">
+          <div class="text-box">
+
+            <h3>Historia.</h3>
+             <p>La historia detrás del chat GPT comenzó en mayo de 2020, cuando la empresa OpenAI lanzó un modelo de inteligencia artificial llamado GPT-3. Este modelo utiliza datos digitales para permitir que los usuarios se comuniquen con una máquina de manera más natural, ¿cómo funcionaba? Los usuarios simplemente escriben una pregunta o una oración, y GPT-3 usa su modelo para ofrecer una respuesta o continuación de la conversación.
+            </p>
+
+            <p>Este chat GPT ha sido creado por uno de los pioneros detrás de la inteligencia artificial, Elon Musk. Él y su equipo en OpenAI son responsables de desarrollar la tecnología que permite a las empresas como Google utilizar la inteligencia artificial en sus productos. Con GPT-3, Tesla ha podido crear chatbots para ayudar a sus clientes en línea.
+            </p>
+            <br>
+
+            <p>El chat GPT es una invención muy interesante que ha revolucionado el mundo digital. Su creador, un equipo de pioneros liderados por Elon Musk y Sam Altman, han utilizado técnicas de inteligencia artificial para desarrollar un modelo de chat que puede interactuar con los usuarios de manera natural y fluida.</p>
+            <br>
+
+            <p>El chat GPT ha sido desarrollado por la empresa OpenAI, una de las principales empresas de inteligencia artificial del mundo. La empresa ha recibido millones de dólares en inversión y ha colaborado con Google y otras grandes empresas para desarrollar tecnología innovadora.</p>
+            <br>
+
+              <p>Desde su creación en mayo de 2020, el chat GPT ha sido utilizado por millones de usuarios en todo el mundo, quienes han quedado impresionados por su capacidad para entender el lenguaje natural y responder de manera coherente. Y con una inversión de $1.6 millones de dólares en OpenAI por parte de Elon Musk, se espera que chat GPT seguirá creciendo y mejorando en los próximos años.</p>
+              <br> <br>
+
+          </div>
+          </div>
+
+          <div class="wrappers">
+            <img src="Imagenes\ChatGPT\ChatGPT1.jpg" alt="">
+            <div class="text-box">
+
+              <h3>Desarrolladores.</h3>
+              <p>La invención del chat GPT es algo impresionante, pero no podríamos llegar a eso sin mencionar al creador del chat GPT. ¿Quién es? Su nombre es Sam Altman, el CEO de OpenAI. Esta empresa se especializa en crear soluciones de inteligencia artificial y utiliza grandes cantidades de datos para esto.
+              </p>
+              <br>
+              <p>OpenAI es una de las empresas de inteligencia artificial más grandes y conocidas en el mundo, lo que significa que Sam Altman y su equipo saben lo que hacen. Crearon el chat GPT como un modelo digital que puede interactuar con los usuarios de manera similar a una conversación humana. Es tan impresionante que puede parecer como si estuvieras hablando con otra persona.
+              </p>
+              <br>
+
+              <p>Este modelo de chat usa la inteligencia artificial para predecir qué responder a los usuarios en función de lo que están escribiendo en el chat. No solo eso, sino que también puede aprender de las conversaciones anteriores para hacer predicciones más precisas en el futuro.</p>
+              <p>Es emocionante pensar en lo que el chat GPT puede hacer y cómo podríamos usarlo en la vida cotidiana. Empresas como Google y Elon Musk han invertido millones en inteligencia artificial, y el chat GPT es una muestra de lo que se puede hacer con esta tecnología. Podría significar un gran avance en la forma en que interactuamos con la tecnología y en cómo las empresas nos proporcionan servicios.</p>
+              <br>
+
+              <p>El chat GPT ha sido uno de los grandes inventos en la era digital. Si te preguntas quién es el creador del chat GPT, la respuesta es OpenAI, una de las empresas más importantes en inteligencia artificial de nuestro mundo actual. Los pioneros detrás del chat GPT son grandes empresarios como Elon Musk y Sam Altman, quienes invirtieron millones de dólares en esta tecnología.</p>
+              <br>
+
+              <p>Si te interesa saber cómo surgió el chat GPT, aquí te cuento la historia detrás de este modelo de inteligencia artificial. En mayo de 2020, OpenAI lanzó la última versión del chat GPT, que utiliza datos y algoritmos para generar respuestas a preguntas e incluso sostener conversaciones con los usuarios. El modelo de chat GPT es capaz de aprender de los datos que se le dan y puede mejorar su conversación con cada interacción.</p>
+              <br>
+
+              <p>Gracias al chat GPT, podemos tener conversaciones rápidas y eficientes con cualquier persona del mundo, sin importar la ubicación geográfica o el idioma. Google también ha invertido en esta tecnología, lo que demuestra que el chat GPT tiene un gran potencial para revolucionar nuestro mundo digital. En resumen, el chat GPT es una de las grandes innovaciones tecnológicas de nuestro tiempo y su futuro promete ser fascinante.</p>
+              <br>
+
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <img src="Imagenes\ChatGPT\ChatGPT2.jpg" alt="">
+            <div class="text-box">
+
+              <h3>Características positivas.</h3>
+              <p>1. Acceso a información abundante y diversa. Integrar ChatGPT en el aula ofrece a los estudiantes acceso a una amplia gama de información. El sistema puede responder preguntas sobre múltiples temas, lo que enriquece el aprendizaje y fomenta la curiosidad.</p>
+              <br>
+
+              <p>2. Aprendizaje personalizado. ChatGPT tiene la capacidad de adaptarse al nivel de conocimiento y estilo de aprendizaje de cada estudiante. Esto permite ofrecer experiencias educativas personalizadas, abordando las fortalezas y debilidades individuales. Al utilizar ChatGPT le puedes indicar el nivel de conocimientos actual del estudiante o decir el objetivo de aprendizaje que quieres cumplir y la herramienta es capaz de adaptarse a ello. Aunque debemos tener en cuenta que ChatGPT es una herramienta generalista.</p>
+              <br>
+
+              <p>3. Fomento de la creatividad. Al interactuar con un sistema de lenguaje generativo, los estudiantes pueden explorar nuevas formas de expresión y pensamiento creativo. Esto es especialmente valioso en áreas como la escritura y la resolución de problemas.</p>
+              <br>
+
+              <p>4. Disponibilidad 24/7. ChatGPT está disponible en cualquier momento, lo que brinda a los estudiantes la flexibilidad de buscar respuestas y aclarar dudas fuera del horario escolar. Esto promueve el aprendizaje autodirigido y autónomo, hace que el alumno no se quede bloqueado en su aprendizaje y puede llegar a mejorar la motivación.</p>
+              <br>
+
+              <h3>¿Se le está dando un uso correcto?</h3>
+              <p>Aunque la invención del chat GPT es un paso emocionante en el mundo de la inteligencia artificial, hay preocupaciones sobre cómo se puede utilizar esta tecnología en el futuro. Algunos temen que las empresas puedan utilizar esta tecnología para manipular a los usuarios o recopilar más datos de lo que es necesario. Sin embargo, por ahora, los usuarios pueden usar el chat GPT para conectarse con las máquinas en tiempo real y obtener respuestas a sus preguntas en cuestión de segundos. </p>
+              <br>
+
+            </div>
+          </div>
+
+          <div class="wrapper">
+              <div class="text-box">
+                Aqui tenemos un video realizado por nuestros integrantes donde te hablamos un poco más sobre esta famosa IA.
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QEDswHkBIKs?si=zv8V0mLcEkpuDySf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+
+            <section class="container-fluid footer_section">
+              <p>&copy;
+                2024 Artificial Brain 6IV10
+                <a href="Acercade.html">¡Conócenos!</a>
+              </p>
+            </section>
+
+      </div>
+
+    </main>
+
+
+    <script src="JS/search.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>

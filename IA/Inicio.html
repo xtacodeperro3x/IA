@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Brain</title>
+    <link rel="icon" href="Imagenes/Logo/Brain.ico">
+
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/burbujas.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="CSS/Cards.css">
+    <link rel="stylesheet" href="CSS/carruselg.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+        <div class="logo">
+          <a href="Inicio.html"> <img src="Imagenes/Logo/AB.png" alt=""> </a>
+        </div>
+
+        <div class="icon__user">
+          <input type="search" id="input-search" placeholder="Buscar aqui">
+            <div class="btns">
+              <i class="fa-solid fa-magnifying-glass" title="Busqueda"></i>
+            </div>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><a href="Inicio.html">Inicio</a></td></tr>
+                    <tr><td><a href="Que.html">¿Qué es?</a></td></tr>
+                    <tr><td><a href="Que.html">Tipos</a></td></tr>
+                    <tr><td><a href="Que.html">Campos</a></td></tr>
+                    <tr><td><a href="Historia.html">Historia</a></td></tr>
+                    <tr><td><a href="Usos.html"></a>Usos</td></tr>
+                    <tr><td><a href="Usos.html">Beneficios</a></td></tr>
+                    <tr><td><a href="Usos.html">Riesgos</a></td></tr>
+                    <tr><td><a href="Plataformas.html">Plataformas</a></td></tr>
+                    <tr><td><a href="Programadores.html">Programadores</a></td></tr>
+                    <tr><td><a href="Universidades.html">Universidades para estudiar IA </a></td></tr>
+                    <tr><td><a href="RainWorld.html">Caso Rain World</a></td></tr>
+                    <tr><td><a href="ChatGPT.html">Chat GPT</a></td></tr>
+                    <tr><td><a href="Acercade.html">Artificial Brain</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+      <div class="name__page">
+          <img src="Imagenes/Logo/AB-s.png" alt="">
+          <h4>Artificial Brain</h4>
+      </div>
+
+        <div class="options__menu">
+
+          <nav class="nav">
+              <ul class="list">
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Inicio.html" class="nav__link"><i class="fa-solid fa-house-chimney" title="Inicio"></i></a>
+                          <a href="Inicio.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                        <a href="Que.html" class="nav__link"><i class="fa-solid fa-circle-question" title="¿Qué es?"></i></a>
+                          <a href="Que.html" class="nav__link">¿Qué es?</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Tipos</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Campos</a>
+                          </li>
+                      </ul>
+
+                  </li>
+
+
+                  <li class="list__item">
+                      <div class="list__button">
+                        <a href="Historia.html" class="nav__link"><i class="fa-solid fa-book" title="Historia"></i></a>
+                          <a href="Historia.html" class="nav__link">Historia</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                          <a href="Usos.html" class="nav__link"><i class="fa-solid fa-computer" title="Usos"></i></a>
+                          <a href="Usos.html" class="nav__link">Usos</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Beneficios</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Riesgos</a>
+                          </li>
+
+                      </ul>
+
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Plataformas.html" class="nav__link"><i class="fa-solid fa-server" title="Plataformas"></i></a>
+                          <a href="Plataformas.html" class="nav__link">Plataformas</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Programadores.html" class="nav__link"><i class="fa-solid fa-user-tie" title="Programadores"></i></a>
+                          <a href="Programadores.html" class="nav__link">Programadores</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Universidades.html" class="nav__link"><i class="fa-solid fa-graduation-cap" title="Universidades"></i></i></a>
+                          <a href="Universidades.html" class="nav__link">Universidades</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="ChatGPT.html" class="nav__link"><i class="fa-solid fa-chalkboard-user" title="ChatGPT"></i></i></a>
+                          <a href="ChatGPT.html" class="nav__link">ChatGPT</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="RainWorld.html" class="nav__link"><i class="fa-solid fa-gamepad" title="Rain World"></i></a>
+                          <a href="RainWorld.html" class="nav__link">Rain World</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Acercade.html" class="nav__link"><i class="fa-solid fa-users" title="Nosotros"></i></a>
+                          <a href="Acercade.html" class="nav__link">Nosotros</a>
+                      </div>
+                  </li>
+
+              </ul>
+          </nav>
+
+        </div>
+
+    </div>
+
+    <main>
+
+      <div class="container">
+          <div class="bubbles">
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:27;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:32;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:33;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+
+
+
+
+          </div>
+      </div>
+
+      <div class="text">
+
+        <h1>Artificial Brain</h1>  <br>
+        <p>Bienvenido a Artificial Brain, Aqui te contaremos todo lo que
+            necesitas saber si te interesa la inteligencia artificial.
+            Puedes buscar dentro de nuestra página lo que más te interesen.
+        </p><br>
+        <section>
+            <div class="slider-frame">
+                <ul>
+                  <li><img src="Imagenes/Banners/Banner_0.png" alt=""></li>
+                  <li><img src="Imagenes/Banners/Banner_1.png" alt=""></li>
+                  <li><img src="Imagenes/Banners/Banner_2.png" alt=""></li>
+                  <li><img src="Imagenes/Banners/Banner_3.png" alt=""></li>
+                  <li><img src="Imagenes/Banners/Banner_4.png" alt=""></li>
+                  <li><img src="Imagenes/Banners/Banner_5.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <br> <br>
+
+
+        <section class="cards">
+          <figure class="card">
+            <div class="card__hero">
+              <img class="card__img" src="Imagenes\Cerebro.jpg">
+            </div>
+            <div class="card__content">
+              <div class="card__text">
+                <h5 class="card__title">¿Qué es?</h5>
+                <p class="card__info">Te preguntas ¿qué es la IA? o ¿te interesaria saberlo?
+                  Con gusto nosotros te decimos un poco sobre la IA,
+                  los tipos que hay y los campos donde puede aplicarse.</p>
+                </div>
+
+                <div class="card__button">
+                  <a href="Que.html" class="card__btn">Leer más...</a>
+                </div>
+
+              </div>
+            </figure>
+          </section>
+
+          <section class="cards">
+            <figure class="card">
+              <div class="card__hero">
+                <img class="card__img" src="Imagenes\Cabeza.jpg">
+              </div>
+              <div class="card__content">
+                <div class="card__text">
+                  <h5 class="card__title">Historia</h5>
+                  <p class="card__info">Te gustaria descubrir de donde surgela IA?
+                    Aqui te contamos un poco de quienes la diseñaron y como fue
+                    avanzando a lo largo de los años.</p>
+                  </div>
+
+                  <div class="card__button">
+                    <a href="Historia.html" class="card__btn">Leer más...</a>
+                  </div>
+
+                </div>
+              </figure>
+            </section>
+
+            <section class="cards">
+              <figure class="card">
+                <div class="card__hero">
+                  <img class="card__img" src="Imagenes\Bot.jpg">
+                </div>
+                <div class="card__content">
+                  <div class="card__text">
+                    <h5 class="card__title">IA´s y sus posibles usos.</h5>
+                    <p class="card__info">Te gustaria descubrir de donde surge la IA?
+                      Aqui te contamos un poco de quienes la diseñaron y como fue avanzando
+                      a lo largo de los años.</p>
+                    </div>
+
+                    <div class="card__button">
+                      <a href="Usos.html" class="card__btn">Leer más...</a>
+                    </div>
+
+                  </div>
+                </figure>
+              </section>
+
+              <section class="cards">
+                <figure class="card">
+                  <div class="card__hero">
+                    <img class="card__img" src="Imagenes\Madre.jpg">
+                  </div>
+                  <div class="card__content">
+                    <div class="card__text">
+                      <h5 class="card__title">Plataformas.</h5>
+                      <p class="card__info">T¿Te interesa encontrar una IA que pueda ayudarte en tus
+                        actividades? ¿O simplemente quieres saber cuáles son las IA’s
+                        más comunes y útiles? Aquí podemos dejarte algunas de ellas.</p>
+                      </div>
+
+                      <div class="card__button">
+                        <a href="Plataformas.html" class="card__btn">Leer más...</a>
+                      </div>
+
+                    </div>
+                  </figure>
+                </section>
+
+                <section class="cards">
+                  <figure class="card">
+                    <div class="card__hero">
+                      <img class="card__img" src="Imagenes\Bots.jpg">
+                    </div>
+                    <div class="card__content">
+                      <div class="card__text">
+                        <h5 class="card__title">Programadores.</h5>
+                        <p class="card__info">¿Sabes quiénes son los principales personajes que se encargaron de la
+                          creación y desarrollo de la IA? Si tu respuesta es no, aquí te dejamos
+                          algunos de los más importantes.</p>
+                        </div>
+
+                        <div class="card__button">
+                          <a href="Programadores.html" class="card__btn">Leer más...</a>
+                        </div>
+
+                      </div>
+                    </figure>
+                  </section>
+
+                  <section class="cards">
+                    <figure class="card">
+                      <div class="card__hero">
+                        <img class="card__img" src="Imagenes\graduado.jpg">
+                      </div>
+                      <div class="card__content">
+                        <div class="card__text">
+                          <h5 class="card__title">Universidades para estudiar desarrollo de IA.</h5>
+                          <p class="card__info">Ya que aprendiste un poco más sobre la IA, ¿Te gustaria aprender a desarrollarla?
+                          Si crees que puedes ser un gran desarrollador de IA, nosotros tenemos las 5 mejores Universidades
+                        en México para convertirte en todo un experto en IA.</p>
+                          </div>
+
+                          <div class="card__button">
+                            <a href="Universidades.html" class="card__btn">Leer más...</a>
+                          </div>
+
+                        </div>
+                      </figure>
+                    </section>
+
+                    <section class="cards">
+                      <figure class="card">
+                        <div class="card__hero">
+                          <img class="card__img" src="Imagenes\ChatGPT1.jpg">
+                        </div>
+                        <div class="card__content">
+                          <div class="card__text">
+                            <h5 class="card__title">Chat GPT</h5>
+                            <p class="card__info">Seguro lo has escuchado o inluso utilizado para tus tareas.
+                            ¿Pero sabes cuál es su historia? Si te gustaria saber más de esta plataforma tan famosa
+                            nosotros tenemos un articulo especial para ella.</p>
+                            </div>
+
+                            <div class="card__button">
+                              <a href="ChatGPT.html" class="card__btn">Leer más...</a>
+                            </div>
+
+                          </div>
+                        </figure>
+                      </section>
+
+                      <section class="cards">
+                        <figure class="card">
+                          <div class="card__hero">
+                            <img class="card__img" src="Imagenes\RainW0.jpg">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__text">
+                              <h5 class="card__title">El caso Rain World.</h5>
+                              <p class="card__info">Día a día vemos el avance de la IA en nuestras actividades diarias,
+                              ¿Pero sabias que hay un videojuego que aplico IA para el comportamiento de sus personajes?
+                              Si quieres ver como funciono esto, aquí te dejamos nuestro articulo hablando de Rain World.</p>
+                              </div>
+
+                              <div class="card__button">
+                                <a href="RainWorld.html" class="card__btn">Leer más...</a>
+                              </div>
+
+                            </div>
+                          </figure>
+                        </section>
+
+
+
+
+                <section class="container-fluid footer_section">
+                  <p>&copy;
+                    2024 Artificial Brain 6IV10
+                    <a href="Acercade.html">¡Conócenos!</a>
+                  </p>
+                </section>
+
+
+
+      </div>
+
+
+    </main>
+
+
+    <script src="JS/search.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>

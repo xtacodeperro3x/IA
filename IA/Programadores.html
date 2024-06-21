@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programadores.</title>
+    <link rel="icon" href="Imagenes/Logo/Brain.ico">
+
+    <link rel="stylesheet" href="CSS/Imagenes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/burbujas.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+        <div class="logo">
+          <a href="Inicio.html"> <img src="Imagenes/Logo/AB.png" alt=""> </a>
+        </div>
+        <div class="icon__user">
+          <input type="search" id="input-search" placeholder="Buscar aqui">
+            <div class="btns">
+              <i class="fa-solid fa-magnifying-glass" title="Busqueda"></i>
+            </div>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><a href="Inicio.html">Inicio</a></td></tr>
+                    <tr><td><a href="Que.html">¿Qué es?</a></td></tr>
+                    <tr><td><a href="Que.html">Tipos</a></td></tr>
+                    <tr><td><a href="Que.html">Campos</a></td></tr>
+                    <tr><td><a href="Historia.html">Historia</a></td></tr>
+                    <tr><td><a href="Usos.html"></a>Usos</td></tr>
+                    <tr><td><a href="Usos.html">Beneficios</a></td></tr>
+                    <tr><td><a href="Usos.html">Riesgos</a></td></tr>
+                    <tr><td><a href="Plataformas.html">Plataformas</a></td></tr>
+                    <tr><td><a href="Programadores.html">Programadores</a></td></tr>
+                    <tr><td><a href="Universidades.html">Universidades para estudiar IA </a></td></tr>
+                    <tr><td><a href="RainWorld.html">Caso Rain World</a></td></tr>
+                    <tr><td><a href="ChatGPT.html">Chat GPT</a></td></tr>
+                    <tr><td><a href="Acercade.html">Artificial Brain</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+      <div class="name__page">
+          <img src="Imagenes/Logo/AB-s.png" alt="">
+          <h4>Artificial Brain</h4>
+      </div>
+
+        <div class="options__menu">
+
+          <nav class="nav">
+              <ul class="list">
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Inicio.html" class="nav__link"><i class="fa-solid fa-house-chimney" title="Inicio"></i></a>
+                          <a href="Inicio.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                        <a href="Que.html" class="nav__link"><i class="fa-solid fa-circle-question" title="¿Qué es?"></i></a>
+                          <a href="Que.html" class="nav__link">¿Qué es?</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Tipos</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Campos</a>
+                          </li>
+                      </ul>
+
+                  </li>
+
+
+                  <li class="list__item">
+                      <div class="list__button">
+                        <a href="Historia.html" class="nav__link"><i class="fa-solid fa-book" title="Historia"></i></a>
+                          <a href="Historia.html" class="nav__link">Historia</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                          <a href="Usos.html" class="nav__link"><i class="fa-solid fa-computer" title="Usos"></i></a>
+                          <a href="Usos.html" class="nav__link">Usos</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Beneficios</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Riesgos</a>
+                          </li>
+
+                      </ul>
+
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Plataformas.html" class="nav__link"><i class="fa-solid fa-server" title="Plataformas"></i></a>
+                          <a href="Plataformas.html" class="nav__link">Plataformas</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Programadores.html" class="nav__link"><i class="fa-solid fa-user-tie" title="Programadores"></i></a>
+                          <a href="Programadores.html" class="nav__link">Programadores</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Universidades.html" class="nav__link"><i class="fa-solid fa-graduation-cap" title="Universidades"></i></i></a>
+                          <a href="Universidades.html" class="nav__link">Universidades</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="ChatGPT.html" class="nav__link"><i class="fa-solid fa-chalkboard-user" title="ChatGPT"></i></i></a>
+                          <a href="ChatGPT.html" class="nav__link">ChatGPT</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="RainWorld.html" class="nav__link"><i class="fa-solid fa-gamepad" title="Rain World"></i></a>
+                          <a href="RainWorld.html" class="nav__link">Rain World</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Acercade.html" class="nav__link"><i class="fa-solid fa-users" title="Nosotros"></i></a>
+                          <a href="Acercade.html" class="nav__link">Nosotros</a>
+                      </div>
+                  </li>
+
+              </ul>
+          </nav>
+
+        </div>
+
+    </div>
+
+    <main>
+
+      <div class="container">
+          <div class="bubbles">
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:27;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:32;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:33;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+
+
+
+          </div>
+      </div>
+
+      <div class="text">
+
+        <div class="wrapper">
+          <h1>Programadores de IA.</h1><br>
+          <p>En el mundo de la inteligencia artificial se cuenta
+            con miles de programadores, que nos han traído maravillas al
+            mundo de la informática, pero estos programadores modernos no
+            hubieran podido obtener tales avances sin la ayuda de programadores
+            que cuando no existía ni una pizca de la tecnología con la que ahora
+            contamos, lograron traernos avances tan magníficos que siguen
+            repercutiendo en la actualidad, aquí te dejamos los que consideramos
+            fueron los más importantes para el desarrollo de la IA.</p> <br>
+
+        </div>
+
+        <div class="wrapper">
+          <img src="Imagenes\Programadores\Pro1.jpg" alt="">
+          <div class="text-box">
+
+            <h3>Alan Turing (Londres,1921 – Reino Unido 1954).</h3>
+            <p>Matemático, lógico, informático teórico, criptógrafo, filósofo y
+              biólogo teórico británico: En 1950 Turing inició su artículo
+              Computing machinery and intelligence formulando la siguiente pregunta:
+              ¿las máquinas pueden pensar? Fue el primer científico en cuestionarse
+              esto, aunque no acuñó el término que hoy conocemos como inteligencia
+              artificial sino utilizó uno llamado metáfora computacional.</p>
+            <p>La metáfora computacional es un concepto utilizado por la
+              psicología cognitiva. Dicha disciplina sostiene que el cerebro
+              posee un sistema de procesos de datos, similar al de una computadora
+              digital. A su vez, el concepto es utilizado en el estudio de
+              la neurociencia y también en la neurofilosofía.</p>
+            <p>Mediante el test de Turing se medía la capacidad de una máquina
+              para hacerse pasar por ser humano mediante una prueba de conversación
+              entre ambos. Si el humano no logra identificar que se trata de una
+              máquina, esta última sería considerada inteligente.
+              Turing contribuyó además a la biología matemática. Publicó
+              un artículo en 1952 que derivó en un campo de investigación
+              matemática basada en la formación de patrones, utilizada en la
+              actualidad.
+            </p> <br>
+
+          </div>
+          </div>
+
+          <div class="wrappers">
+            <img src="Imagenes\Programadores\Pro2.png" alt="">
+            <div class="text-box">
+
+              <h3>Konrad Zuse (Berlín, 1910 - Huenfeld, 1995).</h3>
+              <p>Se le considera el inventor de la primera computadora
+                electrónica digital totalmente funcional, la conocida como
+                Z3 (1941). Además, fue el primero en desarrollar un lenguaje
+                informático e introducir el sistema de numeración binario en la
+                construcción de ordenadores.</p>
+              <p>La importancia de Zuse en el campo de la ingeniería y de la ciencia
+                en general quedó reflejada en los innumerables reconocimientos
+                académicos que recibió. En 1965 se le otorgó el Premio Siemens
+                de Alemania, el galardón tecnológico más importante del país
+                y uno de los más significativos del mundo. Ese mismo año recibió,
+                en Las Vegas, el Harry Goode Memorial Award junto a Stibitz.</p>
+              <p>Asimismo, Zuse fue investido doctor honoris causa por numerosas
+                universidades alemanas y europeas. Hoy día existe en Berlín
+                el Konrad Zuse Zentrum für Informationstechnik, dedicado a la
+                informática científica.</p> <br>
+
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <img src="Imagenes\Programadores\Pro3.jpg" alt="">
+            <div class="text-box">
+
+              <h3>John Mauchly (Estados Unidos, 1907 – Pensylvania, 1980).</h3>
+              <p>Fue un miembro fundador y presidente de la “Association for
+                Computing Machinery” (ACM) y también ayudó a fundar la “Society
+                of Industrial and Applied Mathematics” (SIAM). En 1942 John William
+                Mauchly propuso la creación de un ordenador totalmente digita
+                 que facilitaría mucho los procesos de cálculo.
+                 Con la ayuda de la Armada y del Moore school ayudaron
+                 a Mauchly y Eckert a construirla. Este ordenador era capaz de
+                 realizar grandes operaciones, que antes no eran ni imaginables
+                 de calcular, como, sumar cinco mil números.</p> <br>
+
+            </div>
+            </div>
+
+            <div class="wrappers">
+              <img src="Imagenes\Programadores\Pro4.jpg" alt="">
+              <div class="text-box">
+
+                <h3>John McCarthy (Estados Unidos, 1927 – Estados Unidos, 2011).</h3>
+                <p>Consagrado como padre de la inteligencia artificial no solo por lograr abrir y convertirlo en un campo de investigación nuevo, sino por seguir aportando evidencias para su desarrollo durante medio siglo.</p>
+                <p>En los años siguientes, McCarthy se dedicó a sembrar por las mejores universidades laboratorios de inteligencia artificial, un trabajo del que todavía hoy recogemos frutos. </p>
+                <p>Sin embargo, a pesar de sus esfuerzos, este sistema no le sirvió a McCarthy para conseguir su verdadero objetivo: que un ordenador pasara el test de Turing, según el cual un humano realiza preguntas a través de la pantalla de un ordenador, si no puede decidir si quien le está respondiendo es otro humano o una máquina, esta es definitivamente inteligente. Por ahora, ningún ordenador lo ha conseguido. </p> <br>
+
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <img src="Imagenes\Programadores\Pro5.jpg" alt="">
+              <div class="text-box">
+
+                <h3>Arthur Samuel (Estados Unidos, 1901 – Estados Unidos, 1990).</h3>
+                <p>Conocido dentro de la comunidad de IA por su trabajo innovador en las damas de ordenador. Samuel también diseñó varios mecanismos por los que su programa podría ser mejor. En lo que llamó el aprendizaje de memoria, el programa recordaba cada posición que ya había visto, junto con el valor final de la función de recompensa. Esta técnica se extendió de manera efectiva la profundidad de la búsqueda en cada una de estas posiciones.</p>
+                <p>Fue el pionero de la programación no numérica, que posteriormente se iba a utilizar para el sistema de instrucción de procesadores; fue uno de los pioneros en trabajar en proyectos con excepción de cómputo.</p> <br>
+
+              </div>
+              </div>
+
+              <div class="wrappers">
+                <img src="Imagenes\Programadores\Pro6.jpg" alt="">
+                <div class="text-box">
+
+                  <h3>Claude Shannon (Estados Unidos, 1916 – Estados Unidos 2001).</h3>
+                  <p>Empezó a trabajar sobre el problema de la eficacia de los diferentes métodos existentes de transmisión de la información, tanto mediante el flujo a través de hilos o cables como el aéreo, por medio de corrientes eléctricas fluctuantes o bien moduladas por la radiación electromagnética. Shannon orientó sus esfuerzos hacia la comprensión fundamental del problema y en 1948 desarrolló un método para expresar la información de forma cuantitativa.</p>
+                  <p>También postuló el teorema del muestreo, que sostiene que una señal debe ser muestreada al doble de su frecuencia natural (o, en su defecto, al doble de la mayor de las frecuencias de dicha señal), para que no se produzca el fenómeno de aliasing o aparición de componentes frecuenciales no deseadas.</p> <br>
+
+                </div>
+              </div>
+
+              <div class="wrapper">
+                <img src="Imagenes\Programadores\Pro7.png" alt="">
+                <div class="text-box">
+
+                  <h3>Warren Mcculloch (Estados Unidos, 1988 – Estados Unidos 1869) y Walter Pitts (Estados Unidos, 1923 – Estados Unidos, 1969). </h3>
+                  <p>El modelo de neuronas de McCulloch y Pitts, publicado en 1943, fue el primer intento de formalizar matemáticamente el comportamiento de una neurona y de estudiar sus implicaciones en su capacidad de computar y procesar la información. En el modelo de McCulloch-Pitts, los canales de entrada de cada neurona se llaman dendritas y el único canal de salida recibe el nombre de axón. El axón de la neurona (que puede ramificarse) se conecta a su vez con las dendritas de otras neuronas a través de una sinapsis. Las conexiones sinápticas entre las neuronas pueden ser de dos clases: excitadoras, si contribuyen a la excitación de la neurona receptora, e inhibidoras, si coadyuvan a la inhibición de la misma.</p>
+                  <p>Para determinar si se activa o no, la neurona procede a sumar el número de excitaciones e inhibiciones que recibe de otras neuronas. Si la conexión sináptica activada es excitadora, la neurona agrega un 1 a la suma. Si es inhibidora, resta dicha cantidad.</p>
+                  <p>El desarrollo de las neuronas de McCulloch y Pitts fue el primer intento de analizar el poder computacional y el funcionamiento de una red neuronal, ya fuese natural o artificial. Aunque el objeto de su estudio era más bien ayudar a la comprensión del funcionamiento de la mente humana, su trabajo de 1943 fue seminal en el ámbito de la inteligencia artificial.</p> <br>
+
+                </div>
+                </div>
+
+                <div class="wrappers">
+                  <img src="Imagenes\Programadores\Pro8.jpg" alt="">
+                  <div class="text-box">
+
+                    <h3>Marvin Minsky (Estados Unidos, 1927 – Estados Unidos, 2016).</h3>
+                    <p>Fue uno de los fundadores del laboratorio de IA del Instituto de Tecnología de Massachusetts y en 1986 publicó una obra fundacional en el campo de la ciencia cognitiva, La sociedad de la mente. </p>
+                    <p>Minsky pasó cincuenta años de su vida investigando el mecanismo de la mente en su afán por reproducir algunas de sus múltiples funciones dentro de un laboratorio y ha sido reconocido en todo el mundo como el padre de la inteligencia artificial y uno de los pioneros en el campo de la computación.</p>
+                    <p>En 1951 construyó, junto con un colega llamado Dean Edmonds, la primera máquina electrónica de la historia capaz de aprender: la bautizaron con las siglas Snarc, empleaba 400 válvulas electrónicas y su mecanismo estaba basado en la simulación de redes neurales.</p> <br>
+
+                  </div>
+                </div>
+
+
+          <br><br>
+
+            <section class="container-fluid footer_section">
+              <p>&copy;
+                2024 Artificial Brain 6IV10
+                <a href="Acercade.html">¡Conócenos!</a>
+              </p>
+            </section>
+
+      </div>
+
+    </main>
+
+
+    <script src="JS/search.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>

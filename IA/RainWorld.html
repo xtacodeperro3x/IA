@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain World</title>
+    <link rel="icon" href="Imagenes/Logo/Brain.ico">
+
+    <link rel="stylesheet" href="CSS/Imagenes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/burbujas.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+        <div class="logo">
+          <a href="Inicio.html"> <img src="Imagenes/Logo/AB.png" alt=""> </a>
+        </div>
+        <div class="icon__user">
+          <input type="search" id="input-search" placeholder="Buscar aqui">
+            <div class="btns">
+              <i class="fa-solid fa-magnifying-glass" title="Busqueda"></i>
+            </div>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><a href="Inicio.html">Inicio</a></td></tr>
+                    <tr><td><a href="Que.html">¿Qué es?</a></td></tr>
+                    <tr><td><a href="Que.html">Tipos</a></td></tr>
+                    <tr><td><a href="Que.html">Campos</a></td></tr>
+                    <tr><td><a href="Historia.html">Historia</a></td></tr>
+                    <tr><td><a href="Usos.html"></a>Usos</td></tr>
+                    <tr><td><a href="Usos.html">Beneficios</a></td></tr>
+                    <tr><td><a href="Usos.html">Riesgos</a></td></tr>
+                    <tr><td><a href="Plataformas.html">Plataformas</a></td></tr>
+                    <tr><td><a href="Programadores.html">Programadores</a></td></tr>
+                    <tr><td><a href="Universidades.html">Universidades para estudiar IA </a></td></tr>
+                    <tr><td><a href="RainWorld.html">Caso Rain World</a></td></tr>
+                    <tr><td><a href="ChatGPT.html">Chat GPT</a></td></tr>
+                    <tr><td><a href="Acercade.html">Artificial Brain</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+      <div class="name__page">
+          <img src="Imagenes/Logo/AB-s.png" alt="">
+          <h4>Artificial Brain</h4>
+      </div>
+
+        <div class="options__menu">
+
+          <nav class="nav">
+              <ul class="list">
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Inicio.html" class="nav__link"><i class="fa-solid fa-house-chimney" title="Inicio"></i></a>
+                          <a href="Inicio.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                        <a href="Que.html" class="nav__link"><i class="fa-solid fa-circle-question" title="¿Qué es?"></i></a>
+                          <a href="Que.html" class="nav__link">¿Qué es?</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Tipos</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Campos</a>
+                          </li>
+                      </ul>
+
+                  </li>
+
+
+                  <li class="list__item">
+                      <div class="list__button">
+                        <a href="Historia.html" class="nav__link"><i class="fa-solid fa-book" title="Historia"></i></a>
+                          <a href="Historia.html" class="nav__link">Historia</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                          <a href="Usos.html" class="nav__link"><i class="fa-solid fa-computer" title="Usos"></i></a>
+                          <a href="Usos.html" class="nav__link">Usos</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Beneficios</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Riesgos</a>
+                          </li>
+
+                      </ul>
+
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Plataformas.html" class="nav__link"><i class="fa-solid fa-server" title="Plataformas"></i></a>
+                          <a href="Plataformas.html" class="nav__link">Plataformas</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Programadores.html" class="nav__link"><i class="fa-solid fa-user-tie" title="Programadores"></i></a>
+                          <a href="Programadores.html" class="nav__link">Programadores</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Universidades.html" class="nav__link"><i class="fa-solid fa-graduation-cap" title="Universidades"></i></i></a>
+                          <a href="Universidades.html" class="nav__link">Universidades</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="ChatGPT.html" class="nav__link"><i class="fa-solid fa-chalkboard-user" title="ChatGPT"></i></i></a>
+                          <a href="ChatGPT.html" class="nav__link">ChatGPT</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="RainWorld.html" class="nav__link"><i class="fa-solid fa-gamepad" title="Rain World"></i></a>
+                          <a href="RainWorld.html" class="nav__link">Rain World</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Acercade.html" class="nav__link"><i class="fa-solid fa-users" title="Nosotros"></i></a>
+                          <a href="Acercade.html" class="nav__link">Nosotros</a>
+                      </div>
+                  </li>
+
+              </ul>
+          </nav>
+
+        </div>
+
+    </div>
+
+    <main>
+
+      <div class="container">
+          <div class="bubbles">
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:27;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:32;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:33;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+
+
+
+          </div>
+      </div>
+
+      <div class="text">
+
+        <div class="wrapper">
+          <h1>El caso Rain World.</h1><br>
+          <p>En esta sección queremos presentarte un caso que nos ha
+          parecido muy fascinante y que demuestra como con el uso
+          correcto de la inteligencia artificial puede traerse algo
+          increíble, en este apartado te platicaremos de un un videojuego
+          que ha impresionado a todos debido a la complejidad con el que fue elaborado. </p> <br>
+
+
+           <p>Rain World es un videojuego de plataformas y de supervivencia
+            basado en la física ambientado en un mundo abandonado hace mucho
+            tiempo e invadido por criaturas tanto fascinantes como aterradoras.
+            Una lluvia intensa y devastadora golpea regularmente la superficie,
+            causando que la vida, tal y como la conocemos, sea casi imposible.
+            Las criaturas de este mundo hibernan gran parte del tiempo,
+            pero deben pasar los períodos secos entre lluvias buscando comida
+            para sobrevivir un día más.
+          </p>
+        </div>
+
+        <div class="wrapper">
+          <img src="Imagenes/RainWorld/RainW3.jpg" id="rainW3" alt="">
+          <div class="text-box">
+
+            <p>Dentro de este mundo eres un Gato-babosa  nómada y solitario,
+              tanto depredador como presa. Separado de tu familia debido a una
+              fuerte lluvia, te quedas solo sin nada más que un extraño acompañante
+              amarillo que te guía. Tu misión principal será explorar, encontrar
+              comida y evitar las amenazas siempre presentes tanto del entorno
+              como de los depredadores que acechan por esta tierra, teniendo
+              como misión principal reencontrarte con tu familia.
+            </p>
+            <br>
+
+            <p>Este es un videojuego que ha revolucionado el modo de jugabilidad,
+              debido a que han hecho uso de inteligencia artificial para las
+              criaturas y hasta el mismo jugador, este juego no cuenta con
+              animaciones predeterminadas, sino que hace uso de distintos programas
+              de inteligencia artificial en cada criatura, haciendo que cada
+              una tenga un comportamiento distinto y que dependiendo de tus
+              decisiones estas criaturas actuaran de diversas maneras,
+              ocasionando que si o si el jugador tenga que ser más estratégico
+              a la hora de jugar.</p>
+            <br>
+
+            <p>El objetivo de los desarrolladores al crear este videojuego
+              fue hacer que el ecosistema de Rain World se sintiera
+              como uno real y en lugar de pensar en las criaturas como
+              obstáculos para el jugador, las desarrollaron de tal manera
+              que actuaran como el jugador, es decir, su supervivencia.</p>
+              <br>
+
+          </div>
+          </div>
+
+          <div class="wrappers">
+            <img src="Imagenes/RainWorld/RainW1.png" id="rainW3" alt="">
+            <div class="text-box">
+
+              <p>Esto hace que el mundo de Rain World sea sumamente complejo
+                para el jugador, puesto que siempre estará pasando algo,
+                en este videojuego no existen los patrones, las criaturas
+                siempre van a estar en constante movimiento, actuando tal y
+                como lo hacen los ecosistemas reales.
+              </p>
+              <br>
+              <p>Un ejemplo de esto es cuando morimos en un área de cualquier
+                otro videojuego, nosotros sabemos que al regresar a esa área
+                nos encontraremos de nuevo con las criaturas y tendremos
+                que volver a combatir con ellas, pero en el caso de Rain
+                World no sucede esto, aquí todo siempre estará en movimiento,
+                aun si el jugador no se encuentra presente en esa área.
+              </p>
+              <br>
+
+              <p>Debido a este modo de jugabilidad ocasionado por los programas de inteligencia artificial, mantenerse en supervivencia es bastante difícil, ya que otro punto a añadir es que nuestras decisiones van a influir en el comportamiento de algunas criaturas y comenzaran a tener comportamientos diferentes con nosotros, ya sea que puedan ofrecernos ayuda o actúen en nuestra contra.</p>
+              <p>También hay que agregar que dependiendo el ecosistema o zonas que sean muy similares a un ecosistema se encontraran distintas criaturas.</p>
+              <br>
+
+              <p>Con todo esto sobra decir que las mismas criaturas tendrán miedo de otras criaturas e incluso llegan haber enfrentamientos entre estos y también seguirán una línea de comportamientos, es decir que si son torpes estos pueden ser engañados fácilmente por el jugador, de nuevo, esto se logro con los programas de inteligencia artificial añadidos en las criaturas, que les permite comportarse tal y como lo dice su programa, pero al mismo tiempo permitiendo que tengan libertad de hacer lo que sea, demostrando así que lograron cumplir con su objetivo general, hacer que el videojuego actúe y se sienta como un ecosistema real.</p>
+              <br>
+
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <img src="Imagenes/RainWorld/RainW0.jpg" id="rainW3" alt="">
+            <div class="text-box">
+
+              <p>Cabe destacar que el uso de la inteligencia artificial solo fue usado para las criaturas y el entorno, ya que la creación de fondos y la estética del juego fueron elaborados por diseñadores, esto fue de cierta forma beneficioso para la empresa pues lograron ahorrarse algo de tiempo, pero igual fue algo alarmante para algunas personas, como se ha mencionado, el juego no cuenta con animaciones de movimiento predeterminadas, esto implica que no hubieron animadores ni programadores detrás de esa elaboración  y recordemos que una preocupación constante del público es el remplazo de trabajos.</p>
+              <br>
+
+              <p>Aun con todo esto Rain World nos ofrece una pizca de lo que puede hacerse con el uso de la inteligencia artificial y estamos convencidos de que puede traernos muchas mas innovaciones, ya algunas compañías ya se encuentran haciendo uso de la inteligencia artificial para la jugabilidad, pues, así como lo ha hecho Rain World, muchas otras empresas buscan tener en sus videojuegos la misma complejidad y realidad.</p>
+              <br>
+
+              <p>El mundo de la IA nos está ofreciendo una amplia gama de oportunidades, que no solo van a limitarse a los videojuegos tal y como ya se ha demostrado en nuestra sección de campos, tipos y plataformas donde buscan incorporarse en nuestra vida diaria y con el rápido avance que llevan teniendo en unos años seremos capaces de poder observar con mucho mas detalle y posible fascinación su incorporación.</p>
+              <br>
+
+              <p></p>
+              <br>
+
+            </div>
+          </div>
+
+            <section class="container-fluid footer_section">
+              <p>&copy;
+                2024 Artificial Brain 6IV10
+                <a href="Acercade.html">¡Conócenos!</a>
+              </p>
+            </section>
+
+      </div>
+
+    </main>
+
+
+    <script src="JS/search.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>

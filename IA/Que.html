@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es?</title>
+    <link rel="icon" href="Imagenes/Logo/Brain.ico">
+
+    <link rel="stylesheet" href="CSS/Imagenes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/burbujas.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+        <div class="logo">
+          <a href="Inicio.html"> <img src="Imagenes/Logo/AB.png" alt=""> </a>
+        </div>
+        <div class="icon__user">
+          <input type="search" id="input-search" placeholder="Buscar aqui">
+            <div class="btns">
+              <i class="fa-solid fa-magnifying-glass" title="Busqueda"></i>
+            </div>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><a href="Inicio.html">Inicio</a></td></tr>
+                    <tr><td><a href="Que.html">¿Qué es?</a></td></tr>
+                    <tr><td><a href="Que.html">Tipos</a></td></tr>
+                    <tr><td><a href="Que.html">Campos</a></td></tr>
+                    <tr><td><a href="Historia.html">Historia</a></td></tr>
+                    <tr><td><a href="Usos.html"></a>Usos</td></tr>
+                    <tr><td><a href="Usos.html">Beneficios</a></td></tr>
+                    <tr><td><a href="Usos.html">Riesgos</a></td></tr>
+                    <tr><td><a href="Plataformas.html">Plataformas</a></td></tr>
+                    <tr><td><a href="Programadores.html">Programadores</a></td></tr>
+                    <tr><td><a href="Universidades.html">Universidades para estudiar IA </a></td></tr>
+                    <tr><td><a href="RainWorld.html">Caso Rain World</a></td></tr>
+                    <tr><td><a href="ChatGPT.html">Chat GPT</a></td></tr>
+                    <tr><td><a href="Acercade.html">Artificial Brain</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+      <div class="name__page">
+          <img src="Imagenes/Logo/AB-s.png" alt="">
+          <h4>Artificial Brain</h4>
+      </div>
+
+        <div class="options__menu">
+
+          <nav class="nav">
+              <ul class="list">
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Inicio.html" class="nav__link"><i class="fa-solid fa-house-chimney" title="Inicio"></i></a>
+                          <a href="Inicio.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                        <a href="Que.html" class="nav__link"><i class="fa-solid fa-circle-question" title="¿Qué es?"></i></a>
+                          <a href="Que.html" class="nav__link">¿Qué es?</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Tipos</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Campos</a>
+                          </li>
+                      </ul>
+
+                  </li>
+
+
+                  <li class="list__item">
+                      <div class="list__button">
+                        <a href="Historia.html" class="nav__link"><i class="fa-solid fa-book" title="Historia"></i></a>
+                          <a href="Historia.html" class="nav__link">Historia</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                          <a href="Usos.html" class="nav__link"><i class="fa-solid fa-computer" title="Usos"></i></a>
+                          <a href="Usos.html" class="nav__link">Usos</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Beneficios</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Riesgos</a>
+                          </li>
+
+                      </ul>
+
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Plataformas.html" class="nav__link"><i class="fa-solid fa-server" title="Plataformas"></i></a>
+                          <a href="Plataformas.html" class="nav__link">Plataformas</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Programadores.html" class="nav__link"><i class="fa-solid fa-user-tie" title="Programadores"></i></a>
+                          <a href="Programadores.html" class="nav__link">Programadores</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Universidades.html" class="nav__link"><i class="fa-solid fa-graduation-cap" title="Universidades"></i></i></a>
+                          <a href="Universidades.html" class="nav__link">Universidades</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="ChatGPT.html" class="nav__link"><i class="fa-solid fa-chalkboard-user" title="ChatGPT"></i></i></a>
+                          <a href="ChatGPT.html" class="nav__link">ChatGPT</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="RainWorld.html" class="nav__link"><i class="fa-solid fa-gamepad" title="Rain World"></i></a>
+                          <a href="RainWorld.html" class="nav__link">Rain World</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Acercade.html" class="nav__link"><i class="fa-solid fa-users" title="Nosotros"></i></a>
+                          <a href="Acercade.html" class="nav__link">Nosotros</a>
+                      </div>
+                  </li>
+
+              </ul>
+          </nav>
+
+        </div>
+
+    </div>
+
+    <main>
+
+      <div class="container">
+          <div class="bubbles">
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:27;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:32;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:33;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+
+
+
+          </div>
+      </div>
+
+      <div class="text">
+
+
+        <div class="wrapper">
+          <h1>¿Qué es la IA?</h1><br>
+          <p>La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con
+            el propósito de crear máquinas que presenten las mismas capacidades que el ser humano,
+            esta tecnología permite que las computadoras realicen una variedad de funciones avanzadas,
+            incluida la capacidad de ver, comprender y traducir lenguaje hablado y escrito, analizar
+            datos, hacer recomendaciones y mucho más. Una tecnología que todavía nos resulta lejana
+            y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas.</p><br>
+
+        </div>
+
+        <div class="wrapper">
+          <img src="Imagenes\Que\Que0.jpg"  alt="">
+          <div class="text-box">
+
+            <p>El término inteligencia artificial solía estar relacionado con narrativas futuristas
+              en escenarios usualmente irreales. Sin embargo, el estado actual de las cosas es muy
+              diferente. Gracias a los descubrimientos y avances tecnológicos, el concepto de
+              inteligencia artificial ha adquirido un nuevo sentido, pasando a formar parte de la
+              cotidianeidad de una gran parte de la población mundial.
+              De igual manera, la inteligencia artificial pertenece a una rama de la ciencia
+              informática que tiene como objetivo diseñar tecnología que emule la inteligencia humana.
+              Esto significa que, mediante la creación de algoritmos y sistemas especializados,
+              las máquinas pueden llevar a cabo procesos propios de la inteligencia humana, como aprender,
+              razonar o autocorregirse. Al contrario de la concepción arcaica que se tenía hace algunos años, en la actualidad
+              se sabe que la IA no busca reemplazar a los humanos, sino contribuir al desarrollo de sus
+              capacidades y contribuciones. Sus diferentes aplicaciones tienen como meta mejorar tanto
+              el desempeño como la experiencia de sus usuarios.
+              </p><br
+
+              <p> Podríamos concluir que la inteligencia artificial es el campo de la ciencia de computación
+                dedicado a la resolución de problemas cognitivos asociados comúnmente a la inteligencia humana,
+                como el aprendizaje, la creación y el reconocimiento de imágenes, que tiene por objetivo crear
+                sistemas de autoaprendizaje que deriven significado de los datos para que luego pueda aplicar
+                ese conocimiento para resolver nuevos problemas de manera similar a como lo haría una persona.</p><br>
+
+          </div>
+          </div>
+
+          <div class="wrappers">
+            <img src="Imagenes\Que\Que1.jpg"  alt="">
+            <div class="text-box">
+
+              <h2>Tipos de IA.</h2><br>
+              <p>Dentro del mundo de las IA´s, los expertos en ciencias de la computación proponen distintas
+                posturas sobre los tipos de IA, por un lado, tenemos la propuesta dada por Arend Hitze,
+                la cual se basa en la capacidad predictiva y en los diferentes niveles de complejidad que
+                puede alcanzar una máquina y que se ha considerado uno de los más acertados a la actualidad.
+                Sus niveles propuestos son los siguientes: </p><br>
+
+              <h3>Máquinas reactivas:</h3>
+              <p>Este es el nivel más simple dentro de la clasificación de Hintze.
+                Se consideran como máquinas reactivas a todas aquellas que, si bien hace uso de la inteligencia
+                artificial, no son capaces de recordar ni de usar experiencias previas para tomar decisiones.</p><br>
+
+                <h3>Memoria limitada:</h3>
+                <p>Memoria limitada:A diferencia de las máquinas reactivas, estas sí cuentan con una memoria,
+                  aunque de manera limitada. Esta función les permite generar aprendizajes a partir de los datos.
+                  A pesar de que el almacenamiento de estos aprendizajes se limita a periodos cortos.</p><br>
+
+                <h3>Teoría de la mente:</h3>
+                <p>En este nivel las máquinas son capaces de procesar emociones y realizar
+                  procesos de reflexión propios de la mente humana. Con esto se espera que las máquinas puedan
+                  comprender mejor las interacciones a las que están expuestas. En la actualidad, no se cuentan
+                  aún con aplicaciones concretas dentro de esta categoría.</p><br>
+
+                <h3>Autoconciencia:</h3>
+                <p>La autoconciencia se trata del nivel más alto que puede desarrollar la
+                  inteligencia artificial. La idea es que en este punto las máquinas sean capaces no solo de
+                  comprender emociones, sino también de tener propias. Al igual que en el caso anterior, aún
+                  queda un largo recorrido para que las máquinas puedan desarrollar su autoconciencia.</p><br><br>
+
+              <p>Por otro lado, tenemos las propuestas de Stuart Russell y Peter Norvig, quienes diferencian
+                varios niveles de inteligencia artificial que actúan de manera diferente dependiendo su campo
+                de creación y objetivos, tomando en cuenta los enfoques centrados en los humanos y los centrados
+                en la racionalidad, tales son:</p> <br>
+
+                <h3>Sistemas que piensan como humanos: </h3>
+                <p>Automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje.
+                  Un ejemplo son las redes neuronales artificiales.</p><br>
+
+                <h3>Sistemas que actúan como humanos:</h3>
+                <p>Se trata de computadoras que realizan tareas de forma similar a como lo hacen las personas.
+                  Es el caso de los robots.</p><br>
+
+                <h3>Sistemas que actúan como humanos:</h3>
+                <p>Intentan emular el pensamiento lógico racional de los humanos, es decir, se investiga cómo
+                  lograr que las máquinas puedan percibir, razonar y actuar en consecuencia. Los sistemas
+                  expertos se engloban en este grupo.</p><br>
+
+                <h3>Sistemas que actúan racionalmente:</h3>
+                <p>Idealmente, son aquellos que tratan de imitar de manera racional el comportamiento humano,
+                  como los agentes inteligentes.</p><br><br>
+
+              <p>Para finalizar, te dejamos la que es la clasificación más usada hoy en día, la cual hace
+                referencia a la división de los tipos de inteligencia artificial de acuerdo con la manera
+                en que operan, que son:</p><br>
+
+                <h3>Aprendizaje automático:</h3>
+                <p>A través del uso de algoritmos, el aprendizaje automático analiza los datos para aprender
+                  de ellos y tomar decisiones con base en estos aprendizajes. Un claro ejemplo de ese tipo de
+                  IA son las redes sociales.</p><br>
+
+                <h3>Aprendizaje profundo: </h3>
+                <p>El aprendizaje profundo es un tipo de aprendizaje automático basado en algoritmos
+                  estructurados de manera similar a las redes neuronales humanas. La arquitectura de
+                  estas redes neuronales está dividida en diferentes niveles de profundidad, de ahí su nombre.
+                  La generación automática de textos y los chat-bots son algunas de las aplicaciones más comunes
+                  del aprendizaje profundo.</p><br>
+
+                <h3>Sistema experto: </h3>
+                <p>Se trata de programas informáticos que tienen como objetivo solucionar problemas muy específicos.
+                  Comúnmente se usan en áreas determinadas como lo son las finanzas, banca, medicina, logística, etc.
+                  Para así imitar la toma de decisiones de un profesional en la materia.</p><br>
+
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <img src="Imagenes\Que\Que2.jpg"  alt="">
+            <div class="text-box">
+
+              <h2>Campos.</h2><br>
+              <p>La IA es un campo amplio que abarca muchas disciplinas diferentes, incluidas la informática, el análisis
+                de datos y las estadísticas, la ingeniería de hardware y software, la lingüística, la neurociencia,
+                la filosofía y la psicología.
+                Es un campo que combina la informática y conjuntos de datos robustos para permitir la resolución de problemas.
+                También engloba los subcampos del aprendizaje automático y el aprendizaje profundo, que se mencionan con frecuencia
+                junto con la inteligencia artificial. Estas disciplinas están compuestas por algoritmos de IA que buscan crear
+                sistemas expertos que hagan predicciones o clasificaciones basadas en datos de entrada.
+              </p>
+
+              <p>Aunque el uso de la inteligencia artificial se ve como algo muy alejado y de poco acceso para la tecnología
+                actual, la verdad es que se ha progresado mucho y actualmente lo usamos de manera cotidiana sin darnos cuenta,
+                un ejemplo es el Software de reconocimiento de voz que ha mejorado significativamente a lo largo de los años y
+                ahora es capaz de comprender las palabras mejor que los humanos. También se puede utilizar para mejorar la calidad
+                de las llamadas de voz y los mensajes de texto.
+              Otro ejemplo es la traducción automática, una tecnología que está siendo utilizada a diario por muchas empresas,
+              gobiernos e individuos. Ayuda a las personas a comunicarse entre sí en diferentes idiomas y culturas sin ninguna dificultad.</p>
+              <br>
+              <p>Al final de todo, la inteligencia artificial se seguirá expandiendo para llegar a más campos, ayudando de manera creativa y
+                facilitando las tareas, no solo en los campos laborales sino también en tareas cotidianas, al final, debemos aprender a
+                adaptarnos a su uso e ir aceptando la idea de que el uso de la IA va a quedarse en nuestro día a día.</p>
+              <br>
+
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <section class="container-fluid footer_section">
+            <p>&copy;
+              2024 Artificial Brain 6IV10
+              <a href="Acercade.html">¡Conócenos!</a>
+            </p>
+          </section>
+
+      </div>
+
+    </main>
+
+
+    <script src="JS/search.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>

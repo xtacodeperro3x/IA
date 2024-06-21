@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usos de la IA.</title>
+    <link rel="icon" href="Imagenes/Logo/Brain.ico">
+
+    <link rel="stylesheet" href="CSS/Imagenes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/burbujas.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+        <div class="logo">
+          <a href="Inicio.html"> <img src="Imagenes/Logo/AB.png" alt=""> </a>
+        </div>
+        <div class="icon__user">
+          <input type="search" id="input-search" placeholder="Buscar aqui">
+            <div class="btns">
+              <i class="fa-solid fa-magnifying-glass" title="Busqueda"></i>
+            </div>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><a href="Inicio.html">Inicio</a></td></tr>
+                    <tr><td><a href="Que.html">¿Qué es?</a></td></tr>
+                    <tr><td><a href="Que.html">Tipos</a></td></tr>
+                    <tr><td><a href="Que.html">Campos</a></td></tr>
+                    <tr><td><a href="Historia.html">Historia</a></td></tr>
+                    <tr><td><a href="Usos.html"></a>Usos</td></tr>
+                    <tr><td><a href="Usos.html">Beneficios</a></td></tr>
+                    <tr><td><a href="Usos.html">Riesgos</a></td></tr>
+                    <tr><td><a href="Plataformas.html">Plataformas</a></td></tr>
+                    <tr><td><a href="Programadores.html">Programadores</a></td></tr>
+                    <tr><td><a href="Universidades.html">Universidades para estudiar IA </a></td></tr>
+                    <tr><td><a href="RainWorld.html">Caso Rain World</a></td></tr>
+                    <tr><td><a href="ChatGPT.html">Chat GPT</a></td></tr>
+                    <tr><td><a href="Acercade.html">Artificial Brain</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+      <div class="name__page">
+          <img src="Imagenes/Logo/AB-s.png" alt="">
+          <h4>Artificial Brain</h4>
+      </div>
+
+        <div class="options__menu">
+
+          <nav class="nav">
+              <ul class="list">
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Inicio.html" class="nav__link"><i class="fa-solid fa-house-chimney" title="Inicio"></i></a>
+                          <a href="Inicio.html" class="nav__link">Inicio</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                        <a href="Que.html" class="nav__link"><i class="fa-solid fa-circle-question" title="¿Qué es?"></i></a>
+                          <a href="Que.html" class="nav__link">¿Qué es?</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Tipos</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Que.html" class="nav__link nav__link--inside">Campos</a>
+                          </li>
+                      </ul>
+
+                  </li>
+
+
+                  <li class="list__item">
+                      <div class="list__button">
+                        <a href="Historia.html" class="nav__link"><i class="fa-solid fa-book" title="Historia"></i></a>
+                          <a href="Historia.html" class="nav__link">Historia</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item list__item--click">
+                      <div class="list__button list__button--click">
+                          <a href="Usos.html" class="nav__link"><i class="fa-solid fa-computer" title="Usos"></i></a>
+                          <a href="Usos.html" class="nav__link">Usos</a>
+                          <div class="list__arrow">
+                            <i class= "fa-solid fa-caret-right"></i>
+                          </div>
+                      </div>
+
+                      <ul class="list__show">
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Beneficios</a>
+                          </li>
+
+                          <li class="list__inside">
+                              <a href="Usos.html" class="nav__link nav__link--inside">Riesgos</a>
+                          </li>
+
+                      </ul>
+
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Plataformas.html" class="nav__link"><i class="fa-solid fa-server" title="Plataformas"></i></a>
+                          <a href="Plataformas.html" class="nav__link">Plataformas</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Programadores.html" class="nav__link"><i class="fa-solid fa-user-tie" title="Programadores"></i></a>
+                          <a href="Programadores.html" class="nav__link">Programadores</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Universidades.html" class="nav__link"><i class="fa-solid fa-graduation-cap" title="Universidades"></i></i></a>
+                          <a href="Universidades.html" class="nav__link">Universidades</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="ChatGPT.html" class="nav__link"><i class="fa-solid fa-chalkboard-user" title="ChatGPT"></i></i></a>
+                          <a href="ChatGPT.html" class="nav__link">ChatGPT</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="RainWorld.html" class="nav__link"><i class="fa-solid fa-gamepad" title="Rain World"></i></a>
+                          <a href="RainWorld.html" class="nav__link">Rain World</a>
+                      </div>
+                  </li>
+
+                  <li class="list__item">
+                      <div class="list__button">
+                          <a href="Acercade.html" class="nav__link"><i class="fa-solid fa-users" title="Nosotros"></i></a>
+                          <a href="Acercade.html" class="nav__link">Nosotros</a>
+                      </div>
+                  </li>
+
+              </ul>
+          </nav>
+
+        </div>
+
+    </div>
+
+    <main>
+
+      <div class="container">
+          <div class="bubbles">
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:27;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:32;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:33;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:31;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:34;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:29;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:35;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:30;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:28;"></span>
+
+
+
+          </div>
+      </div>
+
+      <div class="text">
+
+        <div class="wrapper">
+          <h1>IA´s y sus posibles usos. </h1><br>
+          <p>Como se ha mencionado cuando hablamos de inteligencia artificial
+            pensamos en un futuro con robots que nos faciliten la vida,
+            pero ya tenemos grandes aportaciones de la inteligencia artificial
+            que contribuyen no solo a facilitarnos tareas sino también al desarrollo
+            de un futuro más sostenible, a continuación, te dejamos algunos de los
+            usos que la inteligencia artificial busca obtener:</p><br>
+        </div>
+
+            <div class="wrapper">
+              <img src="Imagenes\Usos\Usos1.jpg" alt="">
+              <div class="text-box">
+
+                <h3>Fotografía:</h3>
+                <p>Esta IA es una de las más cercanas a nuestro día a día. Los fabricantes
+                  de móviles han incorporado Inteligencia Artificial de diversos modos.
+                  Huawei, por ejemplo, ha incorporado la IA al software fotográfico para
+                  ayudarnos a conseguir mejores fotografías.</p><br>
+
+                <h3>Coches autónomos:</h3>
+                <p>Se oye hablar de ellos constantemente y está en proceso de validación
+                  de la Inteligencia Artificial para su uso cotidiano. Para ello se apoyan
+                  en el Deep Learning, la rama “compleja” de la inteligencia artificial
+                  para aprender sobre la marcha por dónde circular, los objetos y señales
+                  que se encuentran a su paso. Todo el proceso que conlleva conducir un
+                  coche se procesa y se comparte en una especie de mente colmena para que
+                  el coche se vuelva un conductor experto. </p><br>
+
+                <h3>Gustos Personales:</h3>
+                <p>Los otros gigantes tecnológicos utilizan la inteligencia artificial para
+                  analizar nuestros gustos y recomendarnos productos que puedan interesarnos.
+                  Su uso es muy básico y consiste en dar una publicidad personalizada al usuario.</p><br>
+
+                <h3>Encontrar malware:</h3>
+                <p>Esta la usamos diariamente sin darnos cuenta. Gracias al Machine Learning,
+                  las plataformas de correspondencia electrónicas filtran emails para saber
+                  cuáles son los que llevan SPAM o algún tipo de malware. El sistema aprende,
+                  toma decisiones y hace predicciones para permitirnos navegar de forma más
+                  placentera y segura por nuestro correo.</p><br>
+
+                <h3>Recuento de especies:</h3>
+                <p>Este nos permite controlar la población animal. Se colocan cámaras,
+                  recogen las imágenes y vídeos de las mismas y suben los datos a la nube,
+                  donde una IA se encarga de llevar la cuenta de la población.</p><br>
+
+                <h3>Automatización en fábricas:</h3>
+                <p>No todo es software, las máquinas también pueden aprender, muchas empresas
+                  incorporan la inteligencia artificial para la automatización de procesos
+                  en sus máquinas y así construir un vehículo, entre otras cosas.</p><br>
+
+                <h3>Reconocimiento facial:</h3>
+                <p>Este es uno de los usos más polémicos de la inteligencia artificial
+                  Un ejemplo de esto sería el reconocimiento facial del iPhone X para
+                  desbloquear nuestros móviles. La policía china y británica ya utiliza
+                  cámaras especiales para reconocer a la población y encontrar delincuentes
+                  y ya se han dado casos positivos de arresto gracias a esta tecnología.</p><br>
+
+                <p>Si bien, todos estos usos traen muchísimos beneficios y ayudan en grandes
+                  rasgos a las áreas donde se están aplicando, de igual forma, llegan a ser
+                  muy conflictivos para algunos campos y así como están trayendo puntos
+                  positivos muy grandes, también han traído amenazas y riesgos a distintos
+                  factores, que buscan visibilizar el control que se debe tener al usar la
+                  inteligencia artificial.</p><br>
+
+              </div>
+            </div>
+
+            <div class="wrappers">
+              <img src="Imagenes\Usos\Usos2.jpg" alt="">
+              <div class="text-box">
+
+                <h2>Beneficios de la IA.</h2>
+                <p>La IA puede traernos beneficios muy grandes a la humanidad, hablando
+                  en puestos de trabajo y optimización en tanto a tareas, lo que ha
+                  provocado que se busque implementar aún más su uso en campos laborales,
+                  a continuación, te dejamos los beneficios que la IA nos ha traído:</p><br>
+
+                <h3>Automatización:</h3>
+                <p>La IA puede automatizar flujos de trabajo y procesos,
+                  o trabajar de forma independiente y autónoma de un equipo humano.
+                  Por ejemplo, la IA puede ayudar a automatizar aspectos de la seguridad
+                  cibernética mediante la supervisión y el análisis continuos del tráfico de red.
+                  De manera similar, una fábrica inteligente puede tener decenas de tipos diferentes
+                  de IA en uso, como robots que usan visión artificial para navegar por las
+                  fábricas o inspeccionar productos en busca de defectos, crear gemelos digitales
+                  o usar analítica en tiempo real para medir la eficiencia y la producción.</p><br>
+
+                <h3>Reduce errores humanos:</h3>
+                <p>La IA puede eliminar errores manuales en el procesamiento de datos, las estadísticas,
+                  el ensamblaje en la fabricación y otras tareas a través de automatización y algoritmos
+                  que siguen los mismos procesos cada vez.</p><br>
+
+                <h3>Elimina las tareas repetitivas:</h3>
+                <p>La IA se puede usar para realizar tareas repetitivas, lo que libera al capital humano
+                  a fin de que trabaje en los problemas de mayor impacto. La IA se puede usar para automatizar
+                  procesos, como verificar documentos, transcribir llamadas telefónicas o responder preguntas
+                  sencillas de los clientes, como “¿A qué hora cierran?”. Con frecuencia, los robots se usan
+                  para realizar tareas “aburridas, sucias o peligrosas” en lugar de que las haga un ser humano. </p><br>
+
+                <h3>Rápido y preciso:</h3>
+                <p>La IA puede procesar más información de forma más rápida que un ser humano, mediante
+                  la búsqueda de patrones y el descubrimiento de relaciones en datos que el humano podría no
+                  detectar.</p><br>
+
+                <h3>Disponibilidad infinita:</h3>
+                <p>La IA no tienen limitaciones en términos de horarios, necesidad de descansar ni ningún
+                  otro factor que pueda interrumpir la labor de un ser humano. Cuando se ejecutan en la nube,
+                  la IA y el aprendizaje automático pueden estar “siempre activos”, y trabajar continuamente
+                  en las tareas asignadas. </p><br>
+
+                <h3>Investigación y desarrollo acelerados:</h3>
+                <p>La capacidad de analizar grandes cantidades de datos con rapidez puede acelerar los
+                  avances en investigación y desarrollo. Por ejemplo, la IA se usó en el modelado predictivo
+                  de nuevos tratamientos farmacéuticos potenciales o para cuantificar el genoma humano.</p><br>
+                  <br>
+
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <img src="Imagenes\Usos\Usos3.jpg" alt="">
+              <div class="text-box">
+
+                <h2>Peligros de la IA.</h2> <br>
+                <p>La inteligencia artificial ofrece muchas promesas para la humanidad, pero también podría representar
+                  una amenaza más peligrosa que la bomba nuclear.
+                  Con su capacidad de aprender y evolucionar de forma autónoma, la IA podría superar algún día la inteligencia humana.
+                  Entonces podría decidir volverse contra sus creadores. Este oscuro presagio puede parecer sacado directamente
+                  de una película de ciencia ficción, pero es una posibilidad muy real. Destacados expertos como Stephen Hawking,
+                  Elon Musk o Bill Gates ya han dado la voz de alarma sobre la inteligencia artificial.</p> <br>
+
+                <p>Según ellos, la IA representa un riesgo inminente e inevitable en los próximos años. Por eso piden a
+                los gobiernos que regulen este campo para que se desarrolle de forma ética y segura. Más de un centenar
+                expertos ha pedido también a Naciones Unidas que prohíba los «robots asesinos» y otras armas militares autónomas.
+                Un riesgo especialmente alarmante es la extraordinaria capacidad de la IA generativa para narrar historias que
+                confirman las ideas y los puntos de vista preconcebidos de las personas, lo cual puede amplificar el efecto
+                de las cámaras de eco y de los silos ideológicos. </p> <br>
+
+                <p>Sin embargo, otros expertos creen que el futuro de la inteligencia artificial depende únicamente de
+                  cómo decidan utilizarla los humanos. Incluso una IA aparentemente inofensiva podría manipularse y utilizarse
+                  de forma malintencionada. Ya podemos verlo con el incremento de los «DeepFakes»: vídeos falsos creados mediante Deep Learning
+                  para mostrar a una persona en una situación comprometida.</p><br>
+
+                <p>En marzo de 2022, un video generado mediante IA generativa mostraba supuestamente al presidente Volodímir
+                  Zelenski capitulando ante las fuerzas rusas. Estos incidentes demuestran que la IA generativa puede utilizarse como
+                  arma para manipular la política, los mercados y la opinión pública.
+                  Ya sea que se trate de una historia fabricada, una imagen adulterada o un video sintético, los productos de la IA
+                  generativa pueden ser tan convincentes que crean un falso sentido de realidad. Esto puede propalar información errónea,
+                  incitar al pánico e incluso desestabilizar sistemas económicos y financieros con una eficiencia e intensidad inusitadas.
+                </p><br>
+
+                <p>La amenaza de la IA no se limita a la manipulación. El desplazamiento de puestos de trabajo es otra preocupación que
+                  aumenta conforme la IA continúa avanzando, debido a que podría automatizar tareas que antes realizaban los seres humanos,
+                  lo cual suprimiría muchas ocupaciones y haría necesarias estrategias de empleo y reconversión laboral.</p><br>
+
+                <p>No obstante, la inteligencia artificial seguirá desarrollándose a gran velocidad en los próximos años sin detenerse
+                  y nosotros como humanidad es quien debe decidir qué dirección tomará su desarrollo.</p><br>
+
+              </div>
+            </div>
+
+            <section class="container-fluid footer_section">
+              <p>&copy;
+                2024 Artificial Brain 6IV10
+                <a href="Acercade.html">¡Conócenos!</a>
+              </p>
+            </section>
+
+      </div>
+
+    </main>
+
+
+    <script src="JS/search.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&family=Silkscreen&display=swap');
+
+.slider-frame {
+	width: 100%;
+  height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 600%;
+
+	animation: slide 60s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	11% {margin-left: 0;}
+
+	16% {margin-left: -100%;}
+	27% {margin-left: -100%;}
+
+	33% {margin-left: -200%;}
+	44% {margin-left: -200%;}
+
+	50% {margin-left: -300%;}
+	61% {margin-left: -300%;}
+
+	66% {margin-left: -400%;}
+	77% {margin-left: -400%;}
+
+	83% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}

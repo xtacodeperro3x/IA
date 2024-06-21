@@ -1,0 +1,43 @@
+.container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+.bubbles{
+    display: flex;
+    position: relative;
+}
+.bubbles span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #FF1754;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #932B50,
+    0 0 50px #FF1754,
+    0 0 100px #FF1754;
+    animation: burbuja 14s linear infinite;
+    animation-duration: calc(500s / var(--i));
+
+}
+
+.bubbles span:nth-child(even) {
+  background: #BCF214;
+  box-shadow: 0 0 0 10px #889635,
+  0 0 50px #BCF214,
+  0 0 100px #BCF214;
+}
+
+@keyframes burbuja{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
